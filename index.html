@@ -1,26 +1,130 @@
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Emil Jiang's Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id = "intro" >
+        <header>
+            <ul>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#work-experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <h1 id = "title">Hi, I'm Emil Jiang</h1>
+            <h1 id = "subTitle">I like to code</h1>
+        </header>
+    </div>
+    <br>
+    <div id = "about-me">
+        <h1>About Me</h1>
+        <img id = "me" src="me.jpg" alt="Me">
+        <p>My name is Emil Jiang. I enjoy exercising, and I try to stay in shape. I like going on runs and to the gym. Soccer is my favorite sport to play and watch. I also love music and have played the viola for many many years. Cats are my favorite house pet with monkeys being my favorite outdoor pet. One goal for the future is I hope to learn how to cook.</p>
+    </div>
+    <div id = "work-experience">
+        <h1>Work Experience</h1>
+        <img id = "firstpic" src="jhuapl.png" alt="Johns Hopkins Applied Physics Lab">
+        <img id = "secpic" src="jhuhospital.png" alt="Johns Hopkins General Hospital">
+    </div>
+    <div id="education">
+        <h1 class="heading">Education</h1>
 
-  </head>
+        <div class="education-block">
+            <h3>Cornell University</h3>
+            <span class="education-date">Aug 2023 - Present</span>
+            <h4>B.A. Computer Science</h4>
+            <h5>Itheca, New York</h5>
+            <p>
+            </p>
+        </div>
 
-  <body>
-      <button onclick="changeColor()">Change Color </button>
-  </body>
+        <div class="education-block">
+            <h3>Centennial High School</h3>
+            <span class="education-date">Aug 2019 - May 2023</span>
+            <h4>Ellicott City, Maryland</h4>
+            <h5></h5>
+            <p>
+               Relevant Coursework: Advanced Data Structures, Advanced Object-Oriented Design, PLTW Engineer Design Development, PLTW Digital Electronics, Calculus C, AP Computer Science A, AP Physics C
+            </p>
+        </div>
 
-      <script>
-        function getRandomColor(){
-          let letters = '0123456789ABCDEF';
-          let color = '#';
-          for (let i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-          }
-          return color;
-        }
-        function changeColor(){
-          let newColor = getRandomColor();
-          document.body.style.backgroundColor = newColor;
-        }
-    </script>
 
+    </div>
+    <div id = "projects">
+        <h1>Projects</h1>
+            <div class="project-info">
+                <h3>Self-Driving Model Car</h3>
+                <h4>car built from scratch with self-driving capabilities</h4>
+                <p>
+                    This project was done during an internship at JHU APL. A car was built which was connected to a
+                    raspberry pi and webcam. This car was programmed using python and was able to navigate taped car
+                    lanes autonomously. Video analysis of the car's position relative to the lane was assessed in order to determine the movement of the car.
+                    A lot of research into computer vision and the uses of different libraries was
+                    explored.
+                </p>
+                <a href="car_report.pdf" target="_blank">View Project</a>
+                <a href="https://github.com/EmilJiang/selfdriving_car" target="_blank">View Code</a>
+            </div>
+
+        <div class="project-info">
+            <h3>ASL Soundboard and Translation</h3>
+            <h4>hardware and software to help people with hearing disabilities</h4>
+            <p>
+                This new invention was part of a group project. The idea is to help people with hearing disabilities
+                have easier methods of communication. There is a soundboard(raspberry pi, power bank, and speaker)
+                which is supposed to go on the wrist with buttons. An ios app is paired with the device and allows
+                the user to customize the button press. Google's text to speech API is used to communicate to others.
+                Apple's speech to text is used to allow better communcation between the two parties. Machine learning and
+                image recognition software was also developed in order to delve into the basics ASL Translation.
+            </p>
+            <a href="portfolio.pdf" target="_blank">View Project</a>
+            <a href="https://github.com/EmilJiang/ASL-Soundboard" target="_blank">View Code(In Progress)</a>
+        </div>
+
+        <div class="project-info">
+            <h3>Connect Four</h3>
+            <h4>classic connect four game for one or two players</h4>
+            <p>
+                This game was built in the interest of exploring AI. Learning how to make a computer player that is
+                basically unbeatable was the end goal. A mini-max algorithm was implemented as well as many other features to make the game more
+                enjoyable including choosing from many color schemes, choosing own piece colors, and varying difficulty.
+            </p>
+            <a href="https://github.com/EmilJiang/Connect_Four" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-info">
+            <h3>Space invaders</h3>
+            <h4>retro space invaders</h4>
+            <p>
+                This was my first ever fully functional game built using object orientated design. There are four levels
+                with increasing difficulty. The whole project is drawn using Java's paint component.
+            </p>
+            <a href="https://github.com/EmilJiang/Java-Projects/tree/main/spaceinvader" target="_blank">View Project</a>
+        </div>
+    </div>
+
+    <div id = "contact">
+        <h1>Contact</h1>
+        <p>
+        <a class="contact" href="jiang_resume.pdf" target="_blank">
+            Resume
+        </a>
+        </p>
+        <a href="https://www.linkedin.com/in/emil-jiang-8797b7206/" target="_blank"><img id = "linkedin" src="linkedin.png" alt="My Linkedin"></a>
+        <a href="https://github.com/EmilJiang" target="_blank"><img id = "github" src="github.png" alt="My Github"></a>
+        <a href="https://www.instagram.com/emiljiang/" target="_blank"><img id = "insta" src="insta.png" alt="My Instagram"></a>
+    </div>
+    <div id = "footer">
+            <p>
+                made with ❤️ by emil jiang
+            </p>
+    </div>
+</body>
 </html>
