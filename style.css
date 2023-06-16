@@ -1,9 +1,244 @@
-button {
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+#title{
+    font-size:49px;
+    position: absolute;
+    border-radius: 1em;
+    padding: 1em;
+    top: 10%;
+    left: 0%;
+    right:0%;
+}
+#subTitle{
+    font-size:49px;
+    position: absolute;
+    border-radius: 1em;
+    padding: 1em;
+    top: 25%;
+    left: 0%;
+    right:0%;
+}
+#intro {
+    height:100vh;
+    width: 100vw;
+    background: linear-gradient(to top right, #ff66ff 0%, #ff6600 100%);
+}
+
+header ul {
+    background: none;
+    text-align: right;
+    padding: 10px;
+    margin: 0
+}
+
+header li {
+    font-size: 20px;
+    display: inline-block;
+    padding-right: 10px;
+    padding-top:0;
+}
+
+header a {
     display: block;
+    color: #000000;
+    padding: 10px;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #7a7a7a;
+    text-decoration: none;
+    background: rgba(255,255,255,0);
+    border-radius: 4px
+}
+
+header a:focus {
+    color: #3C3C3C;
+    text-decoration: none
+}
+header.active {
+    display: block
+}
+#about-me{
+    padding: 50px 15px 20px 15px;
+    border-bottom: 1px solid #dcd9d9;
+    text-align: center;
+}
+#about-me #me{
+    height: 150px;
+}
+#about-me h1{
+    text-align: center;
+    font-size: 40px;
+}
+#about-me p{
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 50px 20px 50px;
+}
+#work-experience{
+    padding: 50px 15px 20px 15px;
+    text-align: center;
+    border-bottom: 1px solid #dcd9d9;
+    background: #eeebeb;
+}
+#work-experience h1{
+    font-size: 40px;
+}
+#work-experience img{
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
-  	margin-top: 40%;
-  	font-size: 16px;
-  	padding: 5px;
+}
+#firstpic{
+    height: 200px;
+}
+#secpic{
+    height: 100px;
+    margin-bottom: 50px;
+}
+#education{
+    clear:both
+}
+#education {
+    padding: 50px 15px 20px 15px;
+    border-bottom: 1px solid #dcd9d9;
+    text-align: center;
+}
+
+#education h1 {
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.education-block {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    border: 1px solid #dcd9d9;
+    text-align: left
+}
+
+.education-block h3 {
+    font-weight: 500;
+    float: left;
+    margin: 0;
+    color: #374054
+}
+
+.education-block span {
+    color: #74808a;
+    float: right
+}
+
+.education-block h4 {
+    color: #74808a;
+    clear: both;
+    font-weight: 500;
+    margin: 0 0 2px 0
+}
+
+.education-block h5 {
+    font-size: 1.0em;
+    font-weight: 300;
+    color: #7e8890;
+    margin: 0 0 15px 0
+}
+#projects{
+    padding: 50px 15px 20px 15px;
+    border-bottom: 1px solid #dcd9d9;
+    background: #eeebeb;
+}
+#projects h1{
+    text-align: center;
+    font-size: 40px;
+}
+.project-info {
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    border: 1px solid #dcd9d9;
+    text-align: center;
+    background: white;
+}
+
+.project-info h3 {
+    font-weight: 500;
+    margin: 0;
+    color: #374054
+}
+
+
+.project-info h4 {
+    color: #74808a;
+    clear: both;
+    font-weight: 500;
+    margin: 0 0 2px 0
+}
+
+.project-info h5 {
+    font-size: 1.0em;
+    font-weight: 300;
+    color: #7e8890;
+    margin: 0 0 15px 0
+}
+.project-info a{
+    display: block;
+}
+#contact{
+    padding: 50px 15px 20px 15px;
+    text-align: center;
+    border-bottom: 1px solid #dcd9d9;
+}
+#contact h1{
+    text-align: center;
+    font-size: 40px;
+}
+#contact p {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 30px auto 35px;
+    max-width: 500px; }
+
+#contact a.contact {
+    padding: 8px 15px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    font-size: 1.4em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #6c6c6c;
+    text-decoration: none;
+}
+#contact a.contact:hover {
+    color: lightgray;
+    background: gray;
+    border: 1px solid gray; }
+
+#contact img{
+    display: inline-block;
+}
+#insta{
+    height: 100px;
+    margin-left: 100px;
+}
+#linkedin{
+    height: 100px;
+}
+#github{
+    height: 100px;
+    margin-left: 100px;
+}
+
+#footer{
+    padding: 0px 15px 20px 15px;
+    margin-left: 175px;
 }
